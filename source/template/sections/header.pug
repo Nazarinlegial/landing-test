@@ -1,0 +1,25 @@
+header.header
+  .header__top
+    .container
+      .contacts
+        a.contact(href="tel:+380988888888")
+          i.fa.fa-mobile.contact__icon-mobile(aria-hidden="true")
+          span.contact__text 0988888809
+
+        a.contact(href="mailtp:info@buisness.co")
+          i.fa.fa-envelope.contact__icon-email(aria-hidden="true")
+          span.contact__text  info@buisness.co
+
+          a.face-book-icon(href="facebook.com")  
+            i.fa.fa-facebook-official(aria-hidden="true")
+  .container
+    .header__bottom
+      .logo: img.logo__picture(src="images/Logo.png" alt="")
+      nav.nav
+        - var items = ['Home', 'About as', 'Our Approch', 'Our Work']
+          each item in items
+            if item === 'Home'
+              a.nav__link.nav__link--active(href="#")=  item
+            else
+              a.nav__link(href="#")=  item    
+      a.button.header__button.button--red(href="#") Free Consultation     
