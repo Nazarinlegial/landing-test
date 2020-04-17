@@ -1,0 +1,25 @@
+.hero {
+  min-height: 59px;
+  padding: 134px 0;
+  text-align: center;
+  color: #fff;
+  background: url("../images/bacg1.png") center/cover no-repeat;
+
+  &__about {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+  &__title {
+    margin-top: 5px;
+    margin-bottom: 27px;
+    font-weight: 300;
+  }
+  .button--uppercase {
+    padding: 21px 28px;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+}
