@@ -61,12 +61,12 @@ gulp.task("clean", function del(cb) {
 
 /* ------------ Copy fonts ------------- */
 gulp.task("copy:fonts", function () {
-  return gulp.src("./source/fonts/**/*.*").pipe(gulp.dest("build/fonts"));
+  return gulp.src("source/fonts/**/*.*").pipe(gulp.dest("build/fonts"));
 });
 
 /* ------------ Copy images ------------- */
 gulp.task("copy:images", function () {
-  return gulp.src("./source/images/**/*.*").pipe(gulp.dest("build/images"));
+  return gulp.src("source/images/**/*.*").pipe(gulp.dest("build/images"));
 });
 
 /* ------------ Copy ------------- */
